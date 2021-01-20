@@ -1,0 +1,82 @@
+body {
+    background-color: lightskyblue;
+    font-family: sans-serif;
+    padding: 0;
+}
+
+div.wrapper {
+    width: 300px;
+    margin: 0 auto;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px #00008b81;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 12px auto;
+}
+
+div.pick {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+img{
+    width: 300px;
+}
+input[type='text'] {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+    outline: 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #212121;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+input[type='text']::placeholder {
+    color: transparent;
+}
+
+input[type='text']:placeholder-shown~label {
+    font-size: 16px;
+    cursor: text;
+    top: 32px;
+}
+
+label,
+input[type='text']:focus~label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+input[type='text']:focus~label {
+    color: #1e90ff;
+}
+
+input[type='text']:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #1e90ff;
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #1e90ff;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+}

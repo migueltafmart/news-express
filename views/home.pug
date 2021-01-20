@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        link(rel='stylesheet', href='/css/style.css')
+        script( defer, src='/JS/script.js')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='shortcut icon', href='/img/favicon.png', type='image/png')
+        title Find a movie!
+    body
+        .wrapper
+            h1 Find a movie!
+                 form(action='/film', method='POST')
+                    div.pick
+                        input(type='text', name='title', id='title' placeholder='Write a movie title here...' autofocus)
+                        label Write a movie title here...
+                        input(type='submit', value='Find')
